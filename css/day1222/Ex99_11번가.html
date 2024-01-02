@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex99_11번가</title>
+
+    <style>
+       
+        #middle{
+            /* border: 1px solid red; */
+            margin: auto;
+            width: 550px;
+            text-align: center;
+        
+       
+        }
+        #bo{
+            border: 1px solid grey;
+            width: 550px;
+            margin: auto;
+            
+        }
+        #top{
+            text-align: center; 
+        }
+        #bt{
+            text-align: center;
+        }
+        #chk{
+            margin:auto;
+            font-size: small;
+            text-align: left;
+            width: 350px;
+            
+            
+        }
+
+        .b{ 
+            background-color: rgb(255, 0, 56) ;
+            border: none;
+            text-align: center;
+            font-size: 16px;
+            font-style: normal;
+            width: 350px;
+            padding: 8px 1px 8px;
+            border-radius: 10px;
+            color: white;
+            margin: 10px;
+          
+            
+
+        }
+
+        #ip{
+            width: 350px;
+            margin: auto;
+            border: 0px solid grey; 
+
+        }
+    
+        .ip1{
+            border: 1px solid grey;
+            padding: 0px 16px 2px;
+            
+        }
+        
+        .i{
+            width: 300px;
+            padding: 0px;
+            height: 50px;
+            font-size: 15px;
+            border: 0px;
+            outline: 0px;
+            
+        }
+
+        .o {
+        display: flex;
+        flex-basis: 100%;
+        align-items: center;
+        color: rgba(0, 0, 0, 0.35);
+        font-size: 12px;
+        margin: 8px 90px;
+        
+
+
+        
+        }
+
+        .o::before,
+        .o::after {
+        content: "";
+        flex-grow: 1;
+        background: rgba(0, 0, 0, 0.35);
+        height: 1px;
+        font-size: 0px;
+        line-height: 0px;
+        margin: 0px 16px;
+        }
+
+       
+
+        #ew{
+            margin: auto;
+            padding: 10px;
+            
+        }
+
+        #bottom1{
+            /* border: 1px solid red; */
+            margin: auto;
+            text-align: center;
+        }
+
+        #bottom2{
+            /* border: 1px solid red; */
+            margin: auto;
+            text-align: center;
+            padding-top: 10px;
+            
+        }
+    
+  
+
+        #f{
+            /* border: 1px solid grey; */
+            margin: auto;
+            text-align: center;
+            font-size: small;
+            text-decoration: solid grey;
+        }   
+        
+        .f1{
+            color: grey;
+            text-decoration: none;
+        }
+        
+        .ew1, .ew2, .ew3 , .ew4{
+            color: black;
+            text-decoration: none;
+            
+            
+        }
+
+        .im{
+            margin-bottom: 30px;
+        }
+    </style>
+
+</head>
+<body>
+   <div id="bo">
+    <div id="middle">
+        <div id="top">
+            <h1><img src="img/11st.svg"></h1>
+         </div>
+        <div id="ip" >
+            <div class="ip1">
+                <input type="text"  class="i" placeholder="아이디 입력">
+            </div>
+            <div class="ip1">
+                <input type="password" class="i" placeholder="비밀번호 8자~20자">
+            </div>
+        </div>
+            <div class="im">
+                <div id="bt">
+                    <button type="button" class="b">로그인</button> <br/>
+                </div>
+                <div id="chk" >   
+                    <input type="checkbox"  id="chk2" >
+                    <label for="chk2" >로그인 상태 유지</label>
+                </div> 
+                <div class="o">SNS 아이디로 로그인</div> <br/>
+                    <a href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fkauth.kakao.com%2Foauth%2Fauthorize%3Fis_popup%3Dfalse%26ka%3Dsdk%252F2.1.0%2520os%252Fjavascript%2520sdk_type%252Fjavascript%2520lang%252Fko-KR%2520device%252FWin32%2520origin%252Fhttps%25253A%25252F%25252Flogin.11st.co.kr%26auth_tran_id%3DTxK46ZSvv7knnA8QeLSNhPivDeRldFrlDLcDdMsBX1zyq-qKYFSVgQBeJBtv%26response_type%3Dcode%26state%3Dd468ae689b01828fd4d12d4888ae291a32476231f241a71b50248ef8c0bc49a6b3c74e99%26redirect_uri%3Dhttps%253A%252F%252Flogin.11st.co.kr%252Fauth%252Foauth%252Fkakao%252Fcallback.tmall%26through_account%3Dtrue%26client_id%3D3c1a6c7406b2d5dfb997df33064e2881&talk_login=hidden#login" 
+                    target="_blank"> 
+                        <img src="img/sns-kakao.svg" > </a>
+                    <a href="https://nid.naver.com/oauth2.0/authorize?client_id=oAykCsEu_PlBaWMMnXl8&response_type=code&redirect_uri=https%3A%2F%2Flogin.11st.co.kr%2Fauth%2Foauth%2Fcallback.tmall&state=9ba7936fba546d274c53e9725d1c8067bc1e65a61ecf040573a9b5102bd084f155393aec"
+                    target="_blank">
+                        <img src="img/sns-naver.svg"></a>
+                    <a href="https://auth.skt-id.co.kr/auth/authorize.do?service_type=14&scope=openid&response_type=id_token+token&client_type=WEB&chnl_q=login&frame_refer_host=https%3A%2F%2Flogin.11st.co.kr&client_id=7f65f663-0435-4212-9076-3b81349ffb74&client_secret=eyJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiQTI1NktXIn0.CFw72CKltNxsCGvodWbb9v4AaygAYcCCJkurq7UZS8VkKGX4PuHOLw.lITxqnZ0XWU1B8S0.fDaUuUnK1KgJ9e02eLq790CztRQSzmKj8oXISVIc0VHJsWh78ZA30v00YMELywxDv3TMadUOojuoCLIcwCzGT4ToFvTqUS-RRSBJAjNkcfMsW_WpyP2D69ulh-ZBKSy4ZNeAtKnNYqQXmq33k9WQhuE__IhGD6spXJIS.VjJNd2XB86NupPTbdFK1gA&redirect_uri=https%3A%2F%2Fmember.11st.co.kr%2Ftid%2Fcallback&state=5c067d230cc5dce55db4635a31d185ea3f2eef99f47fff0eb80b69e94befc9a6cd4a4cc9&nonce=5c067d230cc5dce55db4635a31d185ea3f2eef99f47fff0eb80b69e94befc9a6cd4a4cc9"
+                    target="_blank">
+                        <img src="img/sns-tid.svg"></a>
+                    <a href="https://appleid.apple.com/auth/authorize?client_id=kr.co.11st.mobile.signinwithapple&response_type=code%20id_token&redirect_uri=https%3A%2F%2Flogin.11st.co.kr%2Fauth%2Foauth%2Fapple%2Fcallbackpc.tmall&state=7138062e778adb365a0c76ab1574ab20c7c5136afbb5c051bc7870d718f81ec444e5e990&scope=email&response_mode=form_post"
+                    target="_blank">
+                        <img src="img/sns-apple.svg"></a>
+                    <a href="https://id.payco.com/oauth2.0/authorize?client_id=3RDFhOd4bY6gYHvuCg78&response_type=code&redirect_uri=https%3A%2F%2Flogin.11st.co.kr%2Fauth%2Foauth%2Fcallback.tmall&state=7fe3c8029d3f152885abc281f8ba5901ee53f1f26ecb8247d6abfc2f86bbec25a7719a01&serviceProviderCode=FRIENDS&userLocale=ko_KR"
+                    target="_blank">
+                        <img src="img/sns-payco.svg"></a>
+                    <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=435289873337385&kid_directed_site=0&app_id=435289873337385&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D435289873337385%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Flogin.11st.co.kr%252Fauth%252Foauth%252Fcallback.tmall%26state%3Da3054363c70bd1a85ce14940eb4f319b029cb13e7f02d20d7a7883fe994159a260d08b21%26scope%3Dpublic_profile%252Cemail%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D91856704-d627-49e2-84ef-0bc3db178f97%26tp%3Dunspecified&cancel_url=https%3A%2F%2Flogin.11st.co.kr%2Fauth%2Foauth%2Fcallback.tmall%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Da3054363c70bd1a85ce14940eb4f319b029cb13e7f02d20d7a7883fe994159a260d08b21%23_%3D_&display=page&locale=ko_KR&pl_dbl=0"
+                    target="_blank">
+                        <img src="img/sns-facebook.svg"></a>
+                    <a href="https://www.kmcert.com/kmcis/web_v4/kmcisHp00.jsp"
+                    target="_blank">
+                        <img src="img/sns-phone.svg"></a>
+                </div>
+            </div >
+           </div> 
+           <div id="bottom1">  
+            <div id="ew">
+                   <a href="https://member.11st.co.kr/find/id" class="ew1"  >
+                       아이디 찾기</a>
+                   <a href="https://member.11st.co.kr/find/pw" class="ew2">비밀먼호찾기</a>
+                   <a href="#" class="ew3">비회원주문</a>
+                   <a href="https://member.11st.co.kr/register/intro" class="ew4">회원가입</a>
+           </div>
+        </div> 
+            
+            <div id="bottom2">
+                <a href="https://plan.11st.co.kr/plan/front/exhibitions/2147725/detail" class="bottom2" >
+                    <img src="img/banner.png" width="550" height="54"></a>
+            </div>
+            <div>
+                <footer id="f">
+                    <a href="https://www.11stcorp.com/" class="f1">
+                        © 2019 11Street Co.,Ltd. All Rights Reserved.
+                    </a>
+                </footer>
+            </div>
+</body>
+</html>

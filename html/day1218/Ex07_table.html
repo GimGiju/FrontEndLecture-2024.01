@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex07_table.html</title>
+</head>
+<body>
+    <!-- 
+        <table></table> : 테이블을 구성하기 위한 가장 큰 범위 태그
+        <tr></tr> : 가로줄을 만드는 태그 ()
+        <td></td> : 셀(칸)을 만드는 태그 ()
+
+        *<th></th> : 표의 제목을 만드는 태그 (* td 대신 사용 )
+
+        *<td> : 기본값 : 보통글씨, 왼쪽정렬
+        *<th> : 기본값 : 굵은글씨, 가운데정렬    
+
+
+    -->
+    <!-- border="1" : 테이블의 윤곽선 두께 -->
+    <table border="1">
+        <tr>
+            <th>11111</th>
+            <td>22222</td>
+        </tr>
+        <tr>
+            <td>333333333</td>
+            <td>444444444</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table border="1">
+        <tr>
+            <th>언어</th>
+            <th>난이도</th>
+            <th>학습기간</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>하</td>
+            <td>1주</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>중</td>
+            <td>1주</td>
+        </tr>
+        <tr>
+            <td>javascript</td>
+            <td>상</td>
+            <td>2주</td>
+        </tr>
+    </table>
+        
+    <!-- 
+        tab: 오른쪽 이동(들여쓰기) 
+        shift tab : 왼쪽으로 이동 
+        alt 방향키 : 원하는거 하나 아래로 이동
+        alt shift 방향키: 한줄복사
+        ex) <td>2주</td>
+        ex) <td>2주</td>
+        ex) <td>2주</td>
+        ctrl + / : 주석 만들기, 풀기 (파랑 글자 초록색 글자 변환)
+        ctrl + y : ctrl + z 한거 복구,복원
+        shift + home : 커서 기준 앞으로 선택
+        shift + end : 커서 기준 뒤로 선택
+    -->
+
+    <hr>
+    <!-- 테이블 병합 -->
+    <!--
+        colspan : 열 합치기 : "가로"열 병합
+        rowspan : 행 합치기 : "세로"행 병합
+    -->
+    <table border="1">
+        <tr>
+            <td colspan="2">1</td> <!-- 가로 2칸 차지 -->
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <tr>
+            <td rowspan="2">1</td> <!-- 세로 2줄 차지 -->
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>4</td>
+        </tr>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex99_mainFormt</title>
+    
+</head>
+<body>
+    <form id="myform" action="#"> 
+        <fieldset>
+            <legend>로그인정보</legend>
+                <ol>
+                    <li>
+                        아이디 <input type="text" required>
+                    </li>
+                    <li>
+                        비밀번호<input type="password" id="password1">
+                    </li>
+                    <li>
+                        비밀번호 확인 <input type="password" id="password2">
+                    </li>
+                    <li>
+                        회원등급 <input type="text" value="준회원" readonly>
+                    </li>
+                </ol>
+        </fieldset>
+        <fieldset>
+            <legend>개인정보</legend>
+                <ol>
+                    <li>
+                        이름<input type="text" placeholder="5자미만 공백없이"  >
+                    </li>
+                    <li>
+                        메일 주소<input type="email"  placeholder="abcd@domain.com" >
+                    </li>
+                    <li>
+                        연락처<input type="tel" pattern="(010)-\d{3,4}-\d{4}">
+                    </li>
+                    <li>
+                        생일<input type="date">
+                    </li>
+        </fieldset>
+        <fieldset>
+            <legend>코딩 숙련도(상,중,하)</legend>
+            <ol>
+                <li>
+                    <input type="range"  min="0" max="6" list="tickmark">
+                    <datalist  id="tickmark">
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                    <option value="5">5</option>
+                </datalist>
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <input type="submit" name="제출">
+        </fieldset>
+    </form>
+</body>
+</html>
