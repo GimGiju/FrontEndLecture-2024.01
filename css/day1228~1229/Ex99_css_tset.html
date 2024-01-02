@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="reset.css"/>
     <style>
         #div{
-            border: 2px solid black;
+            border: 1px solid black;
             width: 1000px;
             margin: auto;
             padding: 20px;
@@ -18,98 +18,89 @@
         }
 
         .test1{
-            margin: 0;
-
-        }
-
-        .div ul li{
             margin: 0px;
-            padding: 0px;
-            list-style-type: none;
-        }
-        
-        .div li {
-            float: inline-start;
-        }
-        
-        .txt{
-            float:inline-end;
-        }
-        
-        .div2{
-            float: left;
-            width: 430px;
-            margin: auto;
-            
-        }
-        
-        .div2 h1{
-            font-size: 120%;
+
         }
 
        
-
-        .p{
+        
+        .dropdown1{
+            display: inline;
+            margin: 0 15px;
            
-            margin-bottom: 200px;
-            padding: auto;
+        }
+        
+        
+        #txt{
+            float:right;
+        }
+        
+        #dropdown{
+            clear: both;
+            margin-bottom: 30px;
+        }
 
+        .div2{
+            display: inline-block;
+            width: 700px;
+        }
+
+        .div2 > p:last-of-type{
+            height: 200px;
+        }
+
+        .div3{
+            float: right;
+            width: 250px;
+        }
+
+        #div3{
+            float: right;
+            width: 250px;
+        }
+
+        .data{
+            display: block;
+            color: gray;
+            padding-left: 10px;
+        }
+        
+        #div5{
+            clear: both;
         }
        
-        .div3 {
-            float: right;
-            clear: both;
-            /* border: 1px solid red; */
-            width: 250px;
-          
-        }
-
-        .div3 ul li{
-            text-align: center;
-            float: right;
-            width: 250px;
-            clear: both;
-        }
-
-       
-        .div5{
-            clear: both;
-            margin: 0%;
-            padding: 0;
-            font-size: 80%;
-        }
         </style>
 </head>
 <body>
     <div id="div" >
         <div id="test1" >
-            <h1 calss="test1">HTML Example Preview</h1><br/>
+            <h1 calss="test1">HTML Example Preview</h1>
             <h calss="test1">한빛아카데미</h>
         </div>
     
         
     
-        <div class="div">
-            <hr>
-            <ul>
-                <li>
-                    <select class="dropdown">
+        <div id="dropdown">
+            <hr/>
+            <ul style="list-style-type: none; padding: 0; display: inline;">
+                <li class="dropdown1">
+                    <select>
                         <option value="HMTL">HMTL</option>
                         <option value="HMTL1">HMTL1</option>
                         <option value="HMTL3">HMTL3</option>
                         <option value="HMTL5">HMTL5</option>
                     </select>
                 </li>
-                <li>
-                    <select class="dropdown1">
+                <li  class="dropdown1">
+                    <select>
                         <option value="CSS">CSS</option>
                         <option value="CSS1">CSS1</option>
                         <option value="CSS3">CSS3</option>
                         <option value="CSS5">CSS5</option>
                     </select>
                 </li>
-                <li>
-                    <select class="dropdown2">
+                <li class="dropdown1">
+                    <select  >
                         <option value="JavaScript">JavaScript</option>
                         <option value="JavaScript1">JavaScript1</option>
                         <option value="JavaScript3">JavaScript3</option>
@@ -117,53 +108,48 @@
                     </select>
                 </li>
             </ul>
-
-            <div class="txt">
-               
-                    <input type="text"><button>검색</button>
-               
-            </div><br>
+            <div id="txt">
+                    <input type="text"><input type="submit" value="검색">
+            </div>
+            <hr/>
         </div>
-        <hr>
+        
         
         <div class="div2">
-             
             <h1>HTML5 개요와 활용</h1>
-        <br>
+        
             
                 <p>2019년 02월 14일</p><br>
-                <img src="test.jpg" class="img2" width="430" height="280">
+                <img src="test.jpg" alt="이미지가 없습니다" width="430" height="280">
                 
             
-           <br>
+           <br/>
                 <p >테스트데이터</p>
             
         </div>
-    <div class="div3">       
+    <div id="div3">       
             
-            <div clsaa="div4">
-                <ul>
-                        <li>카테고리</li>
-                        <li>데이터</li>
-                        <li>데이터</li>
-                        <li>데이터</li>
-                        <li>데이터</li>
-                        <li>데이터</li>
+            
+                <ul  style="list-style-type: none;">
+                        <h3 style="margin: 0;">카테고리</h3>
+                        <li class="data">데이터</li>
+                        <li class="data">데이터</li>
+                        <li class="data">데이터</li>
+                        <li class="data">데이터</li>
+                        <li class="data">데이터</li>
                     </ul>    
-            </div>
             <br>                               
-            <div class="div4">    
-                <ul>    
-                        <li>최근 글</li>
-                        <li>데이터</li>
-                        <li>데이터</li>
-                        <li>데이터</li>
-                        <li>데이터</li>
-                </ul>
-            </div>
+                <ul  style="list-style-type: none;">    
+                        <h3 style="margin: 0;">최근 글</h3>
+                        <li class="data">데이터</li>
+                        <li class="data">데이터</li>
+                        <li class="data">데이터</li>
+                        <li class="data">데이터</li>
+                    </ul>
+           
     </div> 
         
-        <div class="div5">
+        <div id="div5">
             <hr>
             <p>IT Cookbook HTML5 Programming</p>
         </div> 
