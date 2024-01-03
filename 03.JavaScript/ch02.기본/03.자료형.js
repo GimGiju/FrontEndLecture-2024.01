@@ -35,4 +35,4 @@ console.log(x > 8 || x < -3);       // 논리 연산자 || (or), x > 8 또는 x 
 console.log(x > 8 && x < 12);       // && (and), 8 < x < 12
 console.log(true > 10);
 
-// falsedml 값 0 "" null underfined
+// falsedml 값 0 "" null undefined
