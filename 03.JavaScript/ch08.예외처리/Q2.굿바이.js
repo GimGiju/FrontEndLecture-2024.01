@@ -15,6 +15,8 @@ function isDicisible(year){
       if(isDicisible(i))
           console.log('good');
           else
-          console.log('bye')
+          console.log('bye');
+        return'good' ;
+        return 'bye'
     }
   }
