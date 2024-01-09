@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 생성</title>
+    <style>
+        .class1 {color: blue;}
+        .class2 {background-color: azure;}
+    </style>
+    <script>
+        var count = 1;
+        function addNode(){
+            const h3 = document.createElement('h3');
+            h3.classList.add('class1', 'class2');           // class='class1 class2'
+           /* const textNode = document.createTextNode('홍길동');
+            h3.appendChild(textNode);
+            document.appendChild(h3);*/
+            h3.innerHTML = '홍길동' + count++;
+            // document.getElementById('point').appendChild(h3); 앞으로
+            document.getElementById('point').prepend(h3);    // 뒤로
+        }
+        // function removeNode(){
+        //     const h3 = document.querySelector('.class1.class2');
+        //     document.body.removeChild(h3);
+        // }
+        function removeNode(){
+            const h3 = document.querySelector('.class1.class2');
+            document.getElementById('point').removeChild(h3);
+        }
+    </script>
+</head>
+<body style="margin: 50px;">
+    <h3>당신의 이름은 무엇입니까?</h3>
+    <button onclick="addNode()">추가</button>
+    <button onclick="removeNode()">삭제</button>
+    <hr>
+    <div id="point"></div>
+    <p>It is a long established fact that a erader will be disratacted by the readable</p>
+    
+</body>
+</html>
