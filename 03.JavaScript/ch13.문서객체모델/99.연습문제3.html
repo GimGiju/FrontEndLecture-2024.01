@@ -13,8 +13,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>연습문제 3</title>
+    <script>
+        let p = document.getElementById('h')
+
+        let count = 1;
+        function addNode(){
+            const h3 = document.createElement('h3');
+            h3.classList.add('class1', 'class2');         
+          
+            h3.innerHTML.split(';').sort = p + count++;
+            document.getElementById('point').appendChild(h3); 
+        }
+            
+    </script>
 </head>
 <body>
-    
+    <h3 id="h">51900;83000;158000;367500;250000;59200;128500;1304000</h3>
+    <button onclick="addNode()">출력</button>
+    <hr>
+    <div id="point"></div>
 </body>
 </html>
