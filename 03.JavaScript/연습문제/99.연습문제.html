@@ -33,6 +33,64 @@
         }, 1000);  
     });
     </script>
+    <script>
+        function ans1() {
+            let num1 = Number($('#num1').val());
+            let num2 = Number($('#num2').val());
+            if(num1 <= 1 || num1 > 20 || num2 < 10 || num2 >30 || num2 - num1 < 4){
+                alert('입력값의 범위를 확인하고 다시 입력하시오.');
+                return;
+            }
+                let powerArr = [];
+                for (let i = num1; i <= num2; i++)
+                    powerArr.push(2 ** i);
+                let resultStr = '';
+            
+                for (let i = 0; i < powerArr.length; i++){
+                    if((i + 1) % 5 == 0)
+                        resultStr += powerArr[i] + '<br>';
+                             
+                    else{
+                        if ( i == powerArr.length - 1)
+                            resultStr += powerArr[i]; 
+                        else
+                        resultStr += powerArr[i] + ', ';
+                    }
+                }
+                $('#result1').html(resultStr);
+        }
+    </script>
+    <script>
+        function ans2(){
+            let sentence = $('#sentence').val();
+            let search = $('#search').val();
+            let noPunct = sentence.replace(/[-',.\n]/g, '').toLowerCase();
+            let words = noPunct.split(' ');      
+            let count = 0;
+            for (let word of words){
+                if ( word == search)
+                    count++;
+            }
+            $('#result2').html(`${search} 갯수: ${count}`);
+        }   
+    </script>
+    <script>
+        function ans3() {
+            let price = $('#price').val();
+            let priceStrArr = price.split(';');
+            
+            let priceValArr = [];
+            for( let element of priceStrArr)
+                priceValArr.push(Number(element));
+            let newPrices = priceStrArr.map(x => parseInt(x));
+            
+            newPrices.sort((a, b) => b -a);             
+            let resultStr = '';
+            for( let element of newPrices)
+                resultStr += element + '<br>';
+            $('#result3').html(resultStr);
+}
+    </script>
 </head>
 <body style="margin: 50px;">
     <h2 id="date"></h2>
