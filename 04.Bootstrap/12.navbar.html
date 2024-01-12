@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+   <style>
+      * { font-family: 'Noto Sans KR', sans-serif; }
+      a { text-decoration: none; }
+   </style>   
+    <script>
+
+    </script>
+</head>
+<body style="height: 1500px;">     <!--네비바는 천장에 붙음 -->
+    <nav class="navbar navbar-expand-sm bg-light">   <!-- bg-light 백그라운드 라이트-->
+        <div class="container-fluid">                       <!--<div class="container-fluid"> div 떄문에 justify-content-center 이걸 위에 사용해도 안됨  -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link 3</a>
+            </li>
+          </ul>
+        </div>
+      </nav>      
+      
+      <nav class="navbar navbar-expand-sm bg-light justify-content-center" style="margin-top: 20px;">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link 3</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark mt-4">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-5" href="#"><img src="img/ck-logo.png" height="36" ></a>             
+                <ul class="navbar-nav ms-5 me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">      <!--li class="nav-item 가 내부 아이템 여기에 드롭다운을 준것 -->
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Link</a></li>
+                          <li><a class="dropdown-item" href="#">Another link</a></li>
+                          <li><a class="dropdown-item" href="#">A third link</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex me-5">    <!-- 네비바에 검색 텍스트 버튼 만들기 -->
+                    <input class="form-control me-2" type="text" placeholder="검색할 단어">   
+                    <button class="btn btn-primary" type="button">search</button>
+                </form>
+                <span class="navbar-text me-3">홍길동님 환영합니다.</span> <!-- 네비바쪽에 문자 표시 -->
+            </div>
+      </nav>
+
+      <nav class="navbar navbar-expand-sm bg-light fixed-bottom">  <!-- 제일 아래에 문자가 생김-->
+        <div class="container-fluid justify-content-center">
+            Copyright &copy; 2024 휴먼교육센터, All right reserved.
+        </div>
+      </nav>
+
+      
+</body>
+</html>
