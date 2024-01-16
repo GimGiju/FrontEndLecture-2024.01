@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function() {
+            let num1 = document.querySelectorAll('input')[0];
+            let num2 = document.querySelectorAll('input')[1];
+
+            num1.onkeyup = function(e) {
+                if (num1.value.length >= 6)
+                    num2.focus();
+            }
+            num2.onkeyup = function(e) {
+                if (e.keyCode == 8 && num2.value.length == 0)     
+                    num1.focus();
+            }
+        }
+    </script>
+    <style>
+        #num1{
+           padding-bottom: 10px;
+           border-color: green;
+           outline: none;
+        }
+        #num2{
+            padding-bottom: 10px;
+            border-color: green;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <label class="name1">주민등록번호: </label>
+    <input type="text" id="num1" maxlength="6"> 
+    <span>-</span>
+    <input type="text" id="num2" maxlength="7">
+</body>
+</html>

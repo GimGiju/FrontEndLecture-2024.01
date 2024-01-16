@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+        function twoDigit(num) {
+            return (num < 10) ? '0' + num : String(num);       
+        }
+        
+        function myDateTime(date) {
+            return `${date.getFullYear()}-${twoDigit(date.getMonth()+1)}-${twoDigit(date.getDate())} ` +
+                    `${twoDigit(date.getHours())}:${twoDigit(date.getMinutes())}:${twoDigit(date.getSeconds())}`;
+        }
+       
+        setInterval(function() {
+            const now = new Date();
+            const week = '일월화수목금토'.split('');       
+            let dateStr = myDateTime(now).substring(0, 10);
+            dateStr += '(' + week[now.getDay()] +')';
+            const timeStr = myDateTime(now).substring(11);
+            $('#d').html(dateStr)
+            $('#t').html(timeStr);
+            
+          
+        }, 1000);  
+    });
+    </script>
+</head>
+<body>
+    <h2 id="d" style="display: inline;"></h2>
+    <h2 id="t" style="display: inline;"></h2>
+</body>
+</html>
